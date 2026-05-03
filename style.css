@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #3ecf8e;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: white;
+    --border-color: #444;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    background-image: radial-gradient(circle at top, #255747 0%, #000000 60%);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(62, 207, 142, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.form-container {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 350px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary-color);
+}
+
+input,
+textarea,
+button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(62, 207, 142, 0.1);
+}
+
+button {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contenedor-capsulas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.capsula {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background: var(--card-bg);
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.capsula:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Solo desenfocamos el título y el mensaje */
+.bloqueado h3, 
+.bloqueado p {
+    filter: blur(9px);
+    user-select: none;
+    opacity: 0.8;
+}
+
+/* El contador debe estar limpio y resaltar */
+.bloqueado .contador {
+    filter: none !important;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--primary); /* El verde que te gusta */
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 15px 0;
+    box-shadow: 0 0 15px rgba(62, 207, 142, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+.capsula h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.capsula p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.capsula small {
+    color: #777;
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8em;
+    border-top: 1px solid #333;
+    padding-top: 5px;
+}

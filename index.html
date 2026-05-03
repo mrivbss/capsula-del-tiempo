@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cápsula del Tiempo - Full Stack</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Cápsula del Tiempo ⏳</h1>
+
+    <div class="form-container">
+        <input type="text" id="titulo" placeholder="Título de la meta">
+        <textarea id="mensaje" placeholder="Escribe tu mensaje al futuro..."></textarea>
+        <input type="datetime-local" id="fecha">
+        <button onclick="guardarCapsula()">Enterrar Cápsula</button>
+    </div>
+
+    <div id="contenedor-capsulas"></div>
+    <script src="script.js"></script>
+</body>
+</html>
