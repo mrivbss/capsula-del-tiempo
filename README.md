@@ -16,7 +16,7 @@ Este proyecto fue desarrollado utilizando un stack moderno para garantizar persi
 *   **Persistencia Real:** Los mensajes se guardan en una base de datos en la nube, no se borran al recargar la página.
 *   **Contador Dinámico:** Lógica de tiempo real que calcula días, horas, minutos y segundos restantes.
 *   **Privacidad Visual:** Uso de filtros de CSS para ocultar el contenido de las cápsulas bloqueadas, manteniendo el contador legible para el usuario.
-*   **Responsive Design:** Optimizado para ser utilizado tanto en desktop (especialmente probado en mi Acer Nitro V15) como en dispositivos móviles.
+*   **Responsive Design:** Optimizado para ser utilizado tanto en desktop como en dispositivos móviles.
 
 ## 🔧 Instalación y Configuración
 Si quieres correr este proyecto localmente:
